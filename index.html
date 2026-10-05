@@ -13,7 +13,7 @@
 
     body {
       margin: 0;
-      padding: 30px 15px;
+      padding: 0 15px;
       background: #7fbd7f;
       color: #000000;
       font-family: Arial, Helvetica, sans-serif;
@@ -25,11 +25,17 @@
       text-align: center;
     }
 
-    /* Profile Picture - تصویر بعد میں یہاں لگائی جائے گی */
+    /* Top 728x90 Ad */
+    .top-ad {
+      margin-top: 4px;
+      text-align: center;
+    }
+
+    /* Profile Picture */
     .profile-picture {
       width: 120px;
       height: 120px;
-      margin: 40px auto 20px;
+      margin: 35px auto 20px;
       border: 3px solid #000000;
       border-radius: 50%;
       background: rgba(255,255,255,0.25);
@@ -64,6 +70,18 @@
     .closing {
       margin-top: 28px;
       font-weight: bold;
+    }
+
+    /* 320x50 Ad */
+    .middle-ad {
+      margin-top: 0;
+      margin-bottom: 32px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .middle-ad iframe {
+      max-width: 100%;
     }
 
     .links-title {
@@ -102,28 +120,29 @@
       font-weight: bold;
     }
 
+    .email-section {
+      margin-top: 25px;
+      text-align: center;
+    }
 
+    .email-section a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
 
-    
-.email-section {
-  margin-top: 25px;
-  text-align: center;
-}
+    .email-section a:hover {
+      text-decoration: underline;
+    }
 
-.email-section a {
-  color: #000000;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
+    /* Bottom 728x90 Ad */
+    .bottom-ad {
+      margin-top: 35px;
+      margin-bottom: 4px;
+      text-align: center;
+    }
 
-.email-section a:hover {
-  text-decoration: underline;
-}
-
-
-
-    
     @media (max-width: 600px) {
       h1 {
         font-size: 25px;
@@ -136,24 +155,31 @@
       .description {
         font-size: 16px;
       }
+
+      .bottom-ad,
+      .top-ad {
+        overflow-x: auto;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<script>
-  atOptions = {
-    'key' : '1defb0f3ee22d96a78e92a96b335d777',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
+  <!-- TOP 728x90 AD -->
+  <div class="top-ad">
+    <script>
+      atOptions = {
+        'key' : 'c5fadce4809733b6a313746c3f2319ea',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+  </div>
 
-  
 
   <div class="container">
 
@@ -193,6 +219,22 @@
 
     </div>
 
+
+    <!-- CENTER 320x50 AD -->
+    <div class="middle-ad">
+      <script>
+        atOptions = {
+          'key' : '1defb0f3ee22d96a78e92a96b335d777',
+          'format' : 'iframe',
+          'height' : 50,
+          'width' : 320,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
+    </div>
+
+
     <!-- Account Links -->
     <h2 class="links-title">
       Account Links
@@ -228,35 +270,30 @@
         💼 LinkedIn
       </a>
 
+      <a class="link"
+         href="https://patreon.com/HakimAsifArainOfficial"
+         target="_blank"
+         rel="noopener noreferrer">
+        Patreon
+      </a>
 
-      
-<a class="link"
-   href="https://patreon.com/HakimAsifArainOfficial"
-   target="_blank"
-   rel="noopener noreferrer">
-  Patreon
-</a>
-
-
-      
-      
-<a class="link"
-   href="https://wa.me/923351254866"
-   target="_blank"
-   rel="noopener noreferrer">
-  💬 WhatsApp
-</a>
-      
-
-      <div class="email-section">
-  <a href="mailto:pureempiricalsci@duck.com">
-    ✉️ Email: pureempiricalsci@duck.com
-  </a>
-        
-</div>
-
+      <a class="link"
+         href="https://wa.me/923351254866"
+         target="_blank"
+         rel="noopener noreferrer">
+        💬 WhatsApp
+      </a>
 
     </div>
+
+
+    <!-- Email -->
+    <div class="email-section">
+      <a href="mailto:pureempiricalsci@duck.com">
+        ✉️ Email: pureempiricalsci@duck.com
+      </a>
+    </div>
+
 
     <div class="footer">
       © Hakim Asif Arain
@@ -264,18 +301,20 @@
 
   </div>
 
-<script>
-  atOptions = {
-    'key' : '1defb0f3ee22d96a78e92a96b335d777',
-    'format' : 'iframe',
-    'height' : 50,
-    'width' : 320,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
 
+  <!-- BOTTOM 728x90 AD -->
+  <div class="bottom-ad">
+    <script>
+      atOptions = {
+        'key' : 'c5fadce4809733b6a313746c3f2319ea',
+        'format' : 'iframe',
+        'height' : 90,
+        'width' : 728,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+  </div>
 
-  
 </body>
 </html>

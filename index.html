@@ -244,6 +244,47 @@
 
     }
   </style>
+
+
+
+  
+
+<style>
+/* Default: Desktop */
+.mobile-ad,
+.tablet-ad {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .desktop-ad,
+  .mobile-ad {
+    display: none !important;
+  }
+
+  .tablet-ad {
+    display: block !important;
+  }
+}
+
+/* Mobile Phone */
+@media screen and (max-width: 767px) {
+  .desktop-ad,
+  .tablet-ad {
+    display: none !important;
+  }
+
+  .mobile-ad {
+    display: block !important;
+  }
+}
+</style>
+
+
+
+
+  
 </head>
 
 <body>
@@ -252,25 +293,51 @@
 
     <div class="classic-wrapper">
 
-      <!-- =========================
-           TOP 728x90 AD
-           ========================= -->
 
-      <div class="top-ad">
 
-        <script>
-          atOptions = {
-            'key' : 'c5fadce4809733b6a313746c3f2319ea',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
+<!-- TOP AD -->
+<div class="desktop-ad">
+  <script>
+    atOptions = {
+      'key' : 'c5fadce4809733b6a313746c3f2319ea',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+</div>
 
-        <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+<div class="tablet-ad">
+  <script>
+    atOptions = {
+      'key' : '60663995d84e910714fbea29c528d397',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/60663995d84e910714fbea29c528d397/invoke.js"></script>
+</div>
 
-      </div>
+<div class="mobile-ad">
+  <script>
+    atOptions = {
+      'key' : '1defb0f3ee22d96a78e92a96b335d777',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
+</div>
+
+
+      
+    
 
 
       <!-- =========================
@@ -425,25 +492,48 @@
       </div>
 
 
-      <!-- =========================
-           BOTTOM 728x90 AD
-           ========================= -->
+<!-- BOTTOM AD -->
 
-      <div class="bottom-ad">
+<div class="desktop-ad">
+  <script>
+    atOptions = {
+      'key' : 'c5fadce4809733b6a313746c3f2319ea',
+      'format' : 'iframe',
+      'height' : 90,
+      'width' : 728,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+</div>
 
-        <script>
-          atOptions = {
-            'key' : 'c5fadce4809733b6a313746c3f2319ea',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-          };
-        </script>
+<div class="tablet-ad">
+  <script>
+    atOptions = {
+      'key' : '60663995d84e910714fbea29c528d397',
+      'format' : 'iframe',
+      'height' : 60,
+      'width' : 468,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/60663995d84e910714fbea29c528d397/invoke.js"></script>
+</div>
 
-        <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+<div class="mobile-ad">
+  <script>
+    atOptions = {
+      'key' : '1defb0f3ee22d96a78e92a96b335d777',
+      'format' : 'iframe',
+      'height' : 50,
+      'width' : 320,
+      'params' : {}
+    };
+  </script>
+  <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
+</div>
 
-      </div>
+      
 
     </div>
 

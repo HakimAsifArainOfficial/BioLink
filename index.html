@@ -11,37 +11,68 @@
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
-      padding: 0 15px;
+      padding: 0;
       background: #7fbd7f;
       color: #000000;
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    .container {
-      max-width: 750px;
-      margin: auto;
-      text-align: center;
+    /* =========================
+       CLASSIC COMPUTER LAYOUT
+       ========================= */
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      padding: 0 10px;
     }
 
-    /* Top 728x90 Ad */
+    .classic-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* =========================
+       TOP 728x90 AD
+       4px from top
+       ========================= */
+
     .top-ad {
+      width: 100%;
       margin-top: 4px;
       text-align: center;
+      overflow: hidden;
     }
 
-    /* Profile Picture */
+    /* =========================
+       MAIN CLASSIC CONTENT
+       ========================= */
+
+    .main-content {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* 35px below top ad */
+
     .profile-picture {
       width: 120px;
       height: 120px;
       margin: 35px auto 20px;
       border: 3px solid #000000;
       border-radius: 50%;
-      background: rgba(255,255,255,0.25);
+      background: rgba(255, 255, 255, 0.25);
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       font-size: 14px;
       font-weight: bold;
     }
@@ -49,6 +80,7 @@
     h1 {
       margin: 35px 0 12px;
       font-size: 30px;
+      line-height: 1.3;
     }
 
     .title {
@@ -57,14 +89,19 @@
       margin-bottom: 25px;
     }
 
+    /* =========================
+       DESCRIPTION
+       ========================= */
+
     .description {
+      width: 100%;
       text-align: left;
       font-size: 17px;
       line-height: 1.7;
     }
 
     .description p {
-      margin-bottom: 18px;
+      margin: 0 0 18px;
     }
 
     .closing {
@@ -72,25 +109,29 @@
       font-weight: bold;
     }
 
-    /* 320x50 Ad */
+    /* =========================
+       CENTER 320x50 AD
+       ========================= */
+
     .middle-ad {
+      width: 100%;
       margin-top: 0;
       margin-bottom: 32px;
       text-align: center;
-      width: 100%;
+      overflow: hidden;
     }
 
-    .middle-ad iframe {
-      max-width: 100%;
-    }
+    /* =========================
+       ACCOUNT LINKS
+       ========================= */
 
     .links-title {
-      margin-top: 32px;
-      margin-bottom: 15px;
+      margin: 32px 0 15px;
       font-size: 23px;
     }
 
     .links {
+      width: 100%;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -98,14 +139,20 @@
 
     .link {
       display: block;
+      width: 100%;
       padding: 15px 20px;
+
       background: #ffffff;
       color: #000000;
+
       text-decoration: none;
+
       border: 2px solid #000000;
       border-radius: 12px;
+
       font-size: 17px;
       font-weight: bold;
+
       transition: 0.2s;
     }
 
@@ -114,11 +161,9 @@
       background: #eeeeee;
     }
 
-    .footer {
-      margin-top: 30px;
-      font-size: 13px;
-      font-weight: bold;
-    }
+    /* =========================
+       EMAIL
+       ========================= */
 
     .email-section {
       margin-top: 25px;
@@ -136,14 +181,45 @@
       text-decoration: underline;
     }
 
-    /* Bottom 728x90 Ad */
-    .bottom-ad {
-      margin-top: 35px;
-      margin-bottom: 4px;
+    /* =========================
+       FOOTER
+       ========================= */
+
+    .footer {
+      margin-top: 30px;
+      font-size: 13px;
+      font-weight: bold;
       text-align: center;
     }
 
+    /* =========================
+       BOTTOM 728x90 AD
+       35px above
+       4px below
+       ========================= */
+
+    .bottom-ad {
+      width: 100%;
+      margin-top: 35px;
+      margin-bottom: 4px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 600px) {
+
+      .page {
+        padding: 0 8px;
+      }
+
+      .main-content {
+        width: 100%;
+      }
+
       h1 {
         font-size: 25px;
       }
@@ -156,164 +232,221 @@
         font-size: 16px;
       }
 
-      .bottom-ad,
-      .top-ad {
+      .top-ad,
+      .bottom-ad {
         overflow-x: auto;
       }
+
+      .profile-picture {
+        width: 120px;
+        height: 120px;
+      }
+
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOP 728x90 AD -->
-  <div class="top-ad">
-    <script>
-      atOptions = {
-        'key' : 'c5fadce4809733b6a313746c3f2319ea',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
-  </div>
+  <div class="page">
+
+    <div class="classic-wrapper">
+
+      <!-- =========================
+           TOP 728x90 AD
+           ========================= -->
+
+      <div class="top-ad">
+
+        <script>
+          atOptions = {
+            'key' : 'c5fadce4809733b6a313746c3f2319ea',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+
+        <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+
+      </div>
 
 
-  <div class="container">
+      <!-- =========================
+           MAIN CLASSIC CONTENT
+           ========================= -->
 
-    <!-- Profile Picture -->
-    <div class="profile-picture">
-      Profile Picture
+      <div class="main-content">
+
+        <!-- Profile Picture -->
+
+        <div class="profile-picture">
+          Profile Picture
+        </div>
+
+
+        <!-- Name -->
+
+        <h1>
+          Hakim Asif Arain (حکیم آصف آرائیں)
+        </h1>
+
+
+        <!-- Main Title -->
+
+        <div class="title">
+          Pure Empirical Logic &amp; Scientific Cognitive Processing
+        </div>
+
+
+        <!-- Description -->
+
+        <div class="description">
+
+          <p>
+            Dedicated to the ultimate truth, research, and objective analysis.
+          </p>
+
+          <p>
+            🌐 All analytical, investigative evaluations, news fact-checking,
+            and reports published on this channel are prepared under a
+            transparent, principled, and impartial framework. Rather than
+            relying on emotional reasoning or conventional narratives, our
+            perspective is built strictly on empirical data, verified facts,
+            and clear logical patterns.
+          </p>
+
+          <p class="closing">
+            All of Hakim Asif Arain’s Official Platforms and important Links
+            are available here in one place.
+          </p>
+
+        </div>
+
+
+        <!-- =========================
+             CENTER 320x50 AD
+             ========================= -->
+
+        <div class="middle-ad">
+
+          <script>
+            atOptions = {
+              'key' : '1defb0f3ee22d96a78e92a96b335d777',
+              'format' : 'iframe',
+              'height' : 50,
+              'width' : 320,
+              'params' : {}
+            };
+          </script>
+
+          <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
+
+        </div>
+
+
+        <!-- =========================
+             ACCOUNT LINKS
+             ========================= -->
+
+        <h2 class="links-title">
+          Account Links
+        </h2>
+
+
+        <div class="links">
+
+          <a class="link"
+             href="https://hakimasifarainofficial.blogspot.com/"
+             target="_blank"
+             rel="noopener noreferrer">
+            🌐 Blog
+          </a>
+
+
+          <a class="link"
+             href="https://www.youtube.com/@HakimAsifArainOfficial"
+             target="_blank"
+             rel="noopener noreferrer">
+            ▶️ YouTube
+          </a>
+
+
+          <a class="link"
+             href="https://x.com/HakimAsifArain"
+             target="_blank"
+             rel="noopener noreferrer">
+            𝕏 X / Twitter
+          </a>
+
+
+          <a class="link"
+             href="https://www.linkedin.com/in/asif-arain-surjan-4b9924280"
+             target="_blank"
+             rel="noopener noreferrer">
+            💼 LinkedIn
+          </a>
+
+
+          <a class="link"
+             href="https://patreon.com/HakimAsifArainOfficial"
+             target="_blank"
+             rel="noopener noreferrer">
+            Patreon
+          </a>
+
+
+          <a class="link"
+             href="https://wa.me/923351254866"
+             target="_blank"
+             rel="noopener noreferrer">
+            💬 WhatsApp
+          </a>
+
+        </div>
+
+
+        <!-- Email -->
+
+        <div class="email-section">
+          <a href="mailto:pureempiricalsci@duck.com">
+            ✉️ Email: pureempiricalsci@duck.com
+          </a>
+        </div>
+
+
+        <!-- Footer -->
+
+        <div class="footer">
+          © Hakim Asif Arain
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           BOTTOM 728x90 AD
+           ========================= -->
+
+      <div class="bottom-ad">
+
+        <script>
+          atOptions = {
+            'key' : 'c5fadce4809733b6a313746c3f2319ea',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+        </script>
+
+        <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
+
+      </div>
+
     </div>
 
-    <!-- Name -->
-    <h1>Hakim Asif Arain (حکیم آصف آرائیں)</h1>
-
-    <!-- Main Title -->
-    <div class="title">
-      Pure Empirical Logic &amp; Scientific Cognitive Processing
-    </div>
-
-    <!-- Description -->
-    <div class="description">
-
-      <p>
-        Dedicated to the ultimate truth, research, and objective analysis.
-      </p>
-
-      <p>
-        🌐 All analytical, investigative evaluations, news fact-checking,
-        and reports published on this channel are prepared under a
-        transparent, principled, and impartial framework. Rather than
-        relying on emotional reasoning or conventional narratives, our
-        perspective is built strictly on empirical data, verified facts,
-        and clear logical patterns.
-      </p>
-
-      <p class="closing">
-        All of Hakim Asif Arain’s Official Platforms and important Links
-        are available here in one place.
-      </p>
-
-    </div>
-
-
-    <!-- CENTER 320x50 AD -->
-    <div class="middle-ad">
-      <script>
-        atOptions = {
-          'key' : '1defb0f3ee22d96a78e92a96b335d777',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
-    </div>
-
-
-    <!-- Account Links -->
-    <h2 class="links-title">
-      Account Links
-    </h2>
-
-    <div class="links">
-
-      <a class="link"
-         href="https://hakimasifarainofficial.blogspot.com/"
-         target="_blank"
-         rel="noopener noreferrer">
-        🌐 Blog
-      </a>
-
-      <a class="link"
-         href="https://www.youtube.com/@HakimAsifArainOfficial"
-         target="_blank"
-         rel="noopener noreferrer">
-        ▶️ YouTube
-      </a>
-
-      <a class="link"
-         href="https://x.com/HakimAsifArain"
-         target="_blank"
-         rel="noopener noreferrer">
-        𝕏 X / Twitter
-      </a>
-
-      <a class="link"
-         href="https://www.linkedin.com/in/asif-arain-surjan-4b9924280"
-         target="_blank"
-         rel="noopener noreferrer">
-        💼 LinkedIn
-      </a>
-
-      <a class="link"
-         href="https://patreon.com/HakimAsifArainOfficial"
-         target="_blank"
-         rel="noopener noreferrer">
-        Patreon
-      </a>
-
-      <a class="link"
-         href="https://wa.me/923351254866"
-         target="_blank"
-         rel="noopener noreferrer">
-        💬 WhatsApp
-      </a>
-
-    </div>
-
-
-    <!-- Email -->
-    <div class="email-section">
-      <a href="mailto:pureempiricalsci@duck.com">
-        ✉️ Email: pureempiricalsci@duck.com
-      </a>
-    </div>
-
-
-    <div class="footer">
-      © Hakim Asif Arain
-    </div>
-
-  </div>
-
-
-  <!-- BOTTOM 728x90 AD -->
-  <div class="bottom-ad">
-    <script>
-      atOptions = {
-        'key' : 'c5fadce4809733b6a313746c3f2319ea',
-        'format' : 'iframe',
-        'height' : 90,
-        'width' : 728,
-        'params' : {}
-      };
-    </script>
-    <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
   </div>
 
 </body>

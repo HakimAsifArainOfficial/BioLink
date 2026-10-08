@@ -1699,15 +1699,15 @@ which, instead of relying on conventional rote memorization or
 
 </div>
 
-<script>
-  function openProfileSidebar() {
-    document.getElementById("profileSidebar").classList.add("open");
-  }
+function openProfileSidebar() {
+  document.getElementById("profileSidebar").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
 
-  function closeProfileSidebar() {
-    document.getElementById("profileSidebar").classList.remove("open");
-  }
-</script>
+function closeProfileSidebar() {
+  document.getElementById("profileSidebar").classList.remove("open");
+  document.body.style.overflow = "";
+}
 
       
 </body>

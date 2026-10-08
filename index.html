@@ -1530,7 +1530,6 @@ which, instead of relying on conventional rote memorization or
     right: -330px;
     width: 321px;
     max-width: calc(100% - 20px);
-    height: 100vh;
     background: #0066cc;
     border-left: 1px solid #004c99;
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.20);
@@ -1541,6 +1540,17 @@ which, instead of relying on conventional rote memorization or
     padding: 20px;
   }
 
+/* Mobile Sidebar Position */
+@media screen and (max-width: 468px) {
+  #profileSidebar {
+    top: 60px;
+    bottom: 60px;
+  }
+}
+
+
+
+  
   #profileSidebar.open {
     right: 0;
   }

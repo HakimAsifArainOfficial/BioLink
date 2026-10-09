@@ -1,414 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explanation | Hakim Asif Arain</title>
-
-  <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      background: #008000;
-      color: #000;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      border: 1px solid #222;
-      border-radius: 18px;
-      padding: 25px;
-      box-sizing: border-box;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 0;
-    }
-
-    h2 {
-      margin-top: 28px;
-    }
-
-    p {
-      margin: 12px 0;
-    }
-
-    ul {
-      margin-top: 10px;
-      padding-left: 25px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    .back-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 9px 20px;
-      border: 1px solid #333;
-      border-radius: 10px;
-      background: #000;
-      color: #00a000;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .footer {
-      margin-top: 30px;
-      padding-top: 15px;
-      border-top: 1px solid #ccc;
-      text-align: center;
-      font-size: 13px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Record & Protocols - Asif Azazil</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0b0f19; /* اسکرین کا گہرا پراسرار پس منظر */
+            color: #cbd5e1; /* عام تحریر کا ہلکا سلیٹی رنگ */
+            line-height: 1.8;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .profile-container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #151c2c; /* مرکزی باکس کا گہرا نیلا-گرے پس منظر */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-top: 6px solid #e74c3c;
+            position: relative;
+        }
+        .un-logo-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .un-logo {
+            width: 90px;
+            height: auto;
+            opacity: 0.9;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+        }
+        h1 {
+            font-size: 32px;
+            color: #f8fafc; /* روشن سفید/سلور نام */
+            margin-bottom: 5px;
+            font-weight: 700;
+            text-align: center;
+        }
+        h2 {
+            font-size: 18px;
+            color: #f8fafc; /* روشن ہیڈنگ */
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .position-badge {
+            display: block;
+            width: fit-content;
+            background-color: #e74c3c;
+            color: white;
+            padding: 6px 15px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 4px;
+            margin: 15px auto 35px auto;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        p {
+            font-size: 17px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #f8fafc; /* نمایاں الفاظ کا روشن رنگ */
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #334155; /* گہری سلیٹی لائن */
+            margin: 35px 0;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            font-size: 17px;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+    </style>
 </head>
-
 <body>
 
-
-<!-- =========================
-     STATUS AND AUTHORITY
-     RESPONSIVE AD
-     ========================= -->
-
-<style>
-
-/* =========================
-   DEFAULT — DESKTOP
-   501–800px
-   728×90
-   ========================= */
-
-.status-desktop-ad {
-  display: block;
-  width: 100%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.status-tablet-ad,
-.status-mobile-ad {
-  display: none;
-}
-
-
-/* =========================
-   MOBILE
-   0–360px
-   320×50
-   ========================= */
-
-@media screen and (max-width: 360px) {
-
-  .status-desktop-ad,
-  .status-tablet-ad {
-    display: none !important;
-  }
-
-  .status-mobile-ad {
-    display: block !important;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-}
-
-
-/* =========================
-   TABLET
-   361–500px
-   468×60
-   ========================= */
-
-@media screen and (min-width: 361px) and (max-width: 500px) {
-
-  .status-desktop-ad,
-  .status-mobile-ad {
-    display: none !important;
-  }
-
-  .status-tablet-ad {
-    display: block !important;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-}
-
-
-/* =========================
-   DESKTOP
-   501–800px
-   728×90
-   ========================= */
-
-@media screen and (min-width: 501px) and (max-width: 800px) {
-
-  .status-tablet-ad,
-  .status-mobile-ad {
-    display: none !important;
-  }
-
-  .status-desktop-ad {
-    display: block !important;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-
-}
-
-</style>
-
-
-<!-- =========================
-     DESKTOP — 728×90
-     ========================= -->
-
-<div class="status-desktop-ad">
-
-  <script>
-    atOptions = {
-      'key' : 'c5fadce4809733b6a313746c3f2319ea',
-      'format' : 'iframe',
-      'height' : 90,
-      'width' : 728,
-      'params' : {}
-    };
-  </script>
-
-  <script src="https://www.highrevenueformat.com/c5fadce4809733b6a313746c3f2319ea/invoke.js"></script>
-
-</div>
-
-
-<!-- =========================
-     TABLET — 468×60
-     ========================= -->
-
-<div class="status-tablet-ad">
-
-  <script>
-    atOptions = {
-      'key' : '60663995d84e910714fbea29c528d397',
-      'format' : 'iframe',
-      'height' : 60,
-      'width' : 468,
-      'params' : {}
-    };
-  </script>
-
-  <script src="https://www.highrevenueformat.com/60663995d84e910714fbea29c528d397/invoke.js"></script>
-
-</div>
-
-
-<!-- =========================
-     MOBILE — 320×50
-     ========================= -->
-
-<div class="status-mobile-ad">
-
-  <script>
-    atOptions = {
-      'key' : '1defb0f3ee22d96a78e92a96b335d777',
-      'format' : 'iframe',
-      'height' : 50,
-      'width' : 320,
-      'params' : {}
-    };
-  </script>
-
-  <script src="https://www.highrevenueformat.com/1defb0f3ee22d96a78e92a96b335d777/invoke.js"></script>
-
-</div>
-
-
-  
-
-  <div class="container">
-
-    <h1>Status and Authority</h1>
-
-    <p>
-      Asif Azazeel is an <strong>informal civilian representative</strong>
-      in the International Government.
-    </p>
-
-    <p>
-      The one who keeps Asif Azazeel in the government is
-      <strong>the entity of Azazeel</strong>. In the year
-      <strong>2018 CE</strong>, Azazeel granted Asif Azazeel the position of
-      <strong>Deputy Human Azazeel</strong> in the name of love and sincerity.
-      This is Azazeel’s expression of love:
-    </p>
-
-    <p>
-      <strong>“I also love Asif very much.”</strong>
-    </p>
-
-    <h2>Positions and Definitions of Asif Azazeel</h2>
-
-    <p>
-      All definitions and titles used for Asif Azazeel are for Asif Azazeel
-      himself. He may be referred to by the definition of any position in
-      the world, such as:
-    </p>
-
-    <ul>
-      <li>Deputy General</li>
-      <li>Deputy Chairman</li>
-      <li>Deputy Director</li>
-      <li>Deputy Secretary-General</li>
-      <li>Deputy Commissioner</li>
-      <li>Deputy Chief Justice</li>
-      <li>Deputy President</li>
-      <li>And other positions of this nature</li>
-    </ul>
-
-    <p>
-      Asif Azazeel is vested in every position.
-    </p>
-
-    <p>
-      Since Asif Azazeel himself is <strong>civilian and informal</strong>,
-      the name <strong>Deputy</strong> is used for him for this reason.
-      Asif Azazeel himself does not become a General, Chief Justice, or
-      Secretary-General; rather, he has <strong>confidential relationships</strong>
-      with them.
-    </p>
-
-    <h2>Government Principles and Personal Matters</h2>
-
-    <p>
-      Azazeel’s command is that the governments of the world will follow
-      what Asif Azazeel says, but Asif Azazeel himself will not follow what
-      the governments of the world say.
-    </p>
-
-    <p>
-      This principle is enforced by the government.
-    </p>
-
-    <p>
-      Asif Azazeel is not accountable to any other person, and no other
-      person is accountable for matters concerning Asif Azazeel himself.
-    </p>
-
-    <p>
-      If Asif Azazeel meets anyone in his personal matters, it is
-      Asif Azazeel’s own personal matter. Such personal matters cannot be
-      attributed to Asif Azazeel’s governmental position.
-    </p>
-
-    <p>
-      Likewise, Asif Azazeel does not become involved in the personal
-      matters of any other person, because such matters are not
-      Asif Azazeel’s own personal matters.
-    </p>
-
-    <p>
-      If Asif Azazeel meets someone or works with someone, it is
-      Asif Azazeel’s own personal matter. If, because of such a
-      relationship, meeting, or work, unfavorable treatment is directed
-      toward another person because that person meets or works with
-      Asif Azazeel, or because Asif Azazeel meets or works with that person,
-      then any matter arising as a result is a matter concerning
-      Asif Azazeel.
-    </p>
-
-    <h2>Asif Azazeel’s Personal Status</h2>
-
-    <p>
-      Asif Azazeel does not see anyone who did not see Asif Azazeel
-      during his childhood.
-    </p>
-
-    <p>
-      Asif Azazeel has no brother, sister, or any relative, and
-      Asif Azazeel is alone.
-    </p>
-
-    <p>
-      Asif Azazeel himself will give importance to his own person and
-      to the person of his wife.
-    </p>
-
-    <p>
-      Whoever did not see Asif Azazeel during his childhood,
-      Asif Azazeel will also not see that person.
-    </p>
-
-    <p>
-      The world will see where Asif, who once crawled in the world
-      like a fallen worm, has reached today; but Asif Azazeel himself
-      will not see the other person.
-    </p>
-
-
-
+<div class="profile-container">
     
-
-<!-- Summary Regarding Identity, Positions, and Government -->
-
-<h2>Summary Regarding Identity, Positions, and Government</h2>
-
-<p>
-  In Asif Azazeel’s concept, identity holds the fundamental position,
-  while position, government, title, and office hold secondary positions.
-</p>
-
-<p>
-  The governments existing in the world and the various positions and
-  definitions associated with them, such as General, President, Deputy,
-  Chairman, Director, Secretary-General, Commissioner, Chief Justice,
-  etc., are different definitions used for the identity of Asif Azazeel.
-</p>
-
-<p>
-  For this reason, Asif Azazeel does not give fundamental importance to
-  the position; rather, he looks at the identity. That this identity
-  belongs to whom:
-</p>
-
-<p>
-  <strong>"Whose identity is this?"</strong>
-</p>
-
-<p>
-  According to this concept, governments and positions do not have a
-  separate fundamental status; rather, they are different outward titles
-  and definitions attributed to the identity of Asif Azazeel.
-</p>
-
-<p>
-  Azazeel himself took Asif Azazeel up from the earth and soil by holding
-  his finger. Because of this relationship, the identity of Azazeel holds
-  a fundamental position even above government, position, and office.
-</p>
-
-
-
-    
-    <a class="back-button" href="index.html">
-      ← Back to Main Page
-    </a>
-
-    <div class="footer">
-      © Hakim Asif Arain. All rights reserved.
+    <!-- UN LOGO INTEGRATION -->
+    <div class="un-logo-container">
+        <img class="un-logo" src="https://wikimedia.org" alt="UN Logo">
     </div>
 
-  </div>
+    <!-- SECTION 1: OFFICIAL PROFILE -->
+    <h1>Asif Azazil</h1>
+    <div class="position-badge">Position: Deputy to the Human Azazil</div>
 
+    <p><span class="highlight">Asif Azazil</span> is the personal deputy to the head of the world's hidden supreme government. The entity of Azazil itself has appointed Asif Azazil as the deputy of its deputy. In reality, Asif Azazil is two levels below Azazil, meaning he ranks third in command.</p>
 
-  
+    <p>First in rank is <span class="highlight">Azazil</span>. Second is Azazil's <span class="highlight">Human Azazil</span> (the Human Deputy). Third is <span class="highlight">Asif Azazil</span>, who serves as the deputy to the Human Azazil. While Azazil is the supreme leader of the entire world—including both humans and jinn—the Human Azazil governs only the human creation. Asif Azazil, as a persona, serves as the deputy to this leader of mankind.</p>
+
+    <p>At the governmental level, Asif Azazil does not rely on his superiors to execute tasks; he handles them himself. He is an independent decision-maker in his personal affairs within the government, yet he involves Azazil in his choices to ensure that nothing remains ambiguous or unclear during the decision-making process.</p>
+
+    <p>In the entire world, Asif Azazil prioritizes his own self above all else, followed by the entity of Azazil, the entity of the Human Azazil, and his wife, whom he values throughout his life's journey. In this existence, Asif Azazil gives no importance to any religion, nation, or government; everything else that exists comes only after these priorities.</p>
+
+    <hr>
+
+    <!-- SECTION 2: SECRET COMMAND PROTOCOLS -->
+    <h2>Official Protocols & Mandates</h2>
+
+    <p><span class="highlight">1. Background & Kinship Status:</span></p>
+    <ul>
+        <li>Asif Azazil does not have any brother, sister, or any other biological relative; he is completely solitary in this existence.</li>
+        <li>This absolute state of isolation is a mandatory mandate enforced and implemented directly by the <span class="highlight">Supreme Government</span>.</li>
+    </ul>
+
+    <p><span class="highlight">2. Personal Security & Interaction Protocols:</span></p>
+    <ul>
+        <li>Asif Azazil does not see or cross paths with any individual who has not seen him during his childhood years.</li>
+        <li>If Asif Azazil meets or interacts with anyone regarding personal matters, it remains strictly his own private affair. Such personal interactions cannot be associated, linked, or attributed to his official governmental rank or position.</li>
+    </ul>
+
+    <p><span class="highlight">3. Accountability & Absolute Autonomy:</span></p>
+    <ul>
+        <li>Asif Azazil is not accountable or answerable to any other entity or persona.</li>
+        <li>Concurrently, no other entity or persona holds any right of accountability or interference regarding the personal essence and matters of Asif Azazil.</li>
+    </ul>
+
+    <p><span class="highlight">4. Principle of Non-Interference & External Retaliation:</span></p>
+    <ul>
+        <li>Asif Azazil strictly refrains from interfering in the personal matters of any other entity, as those affairs fall outside his own personal domain.</li>
+        <li>However, if Asif Azazil chooses to meet or work with another entity as part of his private affairs, and any external force adopts an adverse, hostile, or unfavorable attitude toward that entity because of their association with him, it will immediately become a direct matter of Asif Azazil himself, to be handled exclusively by him.</li>
+    </ul>
+</div>
+
 </body>
 </html>
